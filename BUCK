@@ -7,5 +7,8 @@ prebuilt_cxx_library(
     ('lib/glib-2.0/include','**/*.h'),
     ('include/glib-2.0','**/*.h'),
   ]),
+  exported_linker_flags = [
+    '-lpthread'
+  ],
   visibility = ['PUBLIC']
 )
